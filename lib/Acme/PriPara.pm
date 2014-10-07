@@ -2,8 +2,21 @@ package Acme::PriPara;
 use 5.008001;
 use strict;
 use warnings;
+use parent qw(Exporter); 
 
 our $VERSION = "0.01";
+
+use Readonly;
+Readonly our $SoLaMiSMILE => [
+    'ManakaLala',
+    'MinamiMirei',
+    'HōjōSophie',
+];
+Readonly our $DressingPafé => [
+    'ShionTodo',
+    'DorothyWest',
+    'LeonaWest',
+];
 
 
 
@@ -33,7 +46,7 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-htk291 E<lt>htk0129@gmail.comE<gt>
+htk291 E<lt>htk291@gmail.comE<gt>
 
 =cut
 
