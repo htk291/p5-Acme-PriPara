@@ -3,29 +3,6 @@ use warnings;
 use Acme::PriPara;
 use Test::More;
 
-subtest => sub {
-    subtest 'Concept Memo' => {
-        my ($lala, $mirei, $sophie, $shion, $dorothy, $leona) = Acme::PriPara->main_members;
-        is $lala->name, 'Manaka Lala';
-        is $lala->costume_brand, undef;
-
-        ## Manaka Lala
-        # Lala enter the PriPara World
-        $lala->pripara_change;
-        is $lala->costume_brand, 'Twinkle Ribbon';
-
-
-        ## Hōjō Sophie
-        # Sophie attempt to enter the PriPara World...
-        $sophie->pripara_change;
-        is $lala->costume_brand, undef;
-
-        # Sophie enter the PriPara World...
-        $sophie->pripara_change('Red Flash');
-        is $sophie->costume_brand, 'Holic Trick';
-    }
-};
-
 subtest 'Charactors' => sub {
     subtest 'Lala' => sub {
         my $lala = Acme::PriPara::MainMembers::ManakaLala->new;
@@ -35,10 +12,10 @@ subtest 'Charactors' => sub {
         is $lala->age,            10;
         is $lala->voiced_by,     'Akaneya Himika';
         is $lala->say,           'Kashikoma!';
-        is $lala->costume_brand,  undef;
+        is $lala->costume_brand,  undef;    # withiout PriPara Changing, you cannot get costume_brand.
 
         $lala->pripara_change;
-        is $lala->costume_brand, 'Twinkle Ribbon';
+        is $lala->costume_brand, 'Twinkle Ribbon';  
     };
 
     subtest 'Mirei' => sub {
@@ -69,9 +46,9 @@ subtest 'Charactors' => sub {
         is $sophie->say,           '';
 
         $sophie->pripara_change;
-        is $sophie->costume_brand, undef;
+        is $sophie->costume_brand, undef;     # Sophie attempt to enter the PriPara World...
 
-        $sophie->pripara_change('Red Flash');
+        $sophie->pripara_change('Red Flash'); # Sophie can get to the PriPara World after eating Red Flash
         is $sophie->costume_brand, 'Holic Trick';
         is $sophie->say,           'something';
     };
@@ -79,6 +56,7 @@ subtest 'Charactors' => sub {
     subtest 'Shion' => sub {
         my $shion = Acme::PriPara::MainMembers::TodoShion->new;
         is $shion->name,          'Todo Shion';
+        is $shion->voiced_by,     'Yamakita Saki';
         is $shion->age,           '12?';
         # ...
 
@@ -88,25 +66,27 @@ subtest 'Charactors' => sub {
     subtest 'Dorothy' => sub {
         my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
         is $dorothy->name,        'Dorothy West';
+        is $dorothy->voiced_by,   'Shibuya Azuki';
         # ...
 
         $dorothy->pripara_change;
         is $dorothy->costume_brand, undef;
 
         my $leona = Acme::PriPara::MainMembers::LeonaWest->new;
-        $dorothy->pripara_change($leona);
+        $dorothy->pripara_change($leona);  # Dorothy is always being with Leona ...
         is $dorothy->costume_brand, 'Fortune Party';
     };
     subtest 'Leona' => sub {
         my $leona = Acme::PriPara::MainMembers::LeonaWest->new;
         is $leona->name,         'Leona West';
+        is $leona->voiced_by,    'Wakai Yuki';
         # ...
 
         $leona->pripara_change;
         is $leona->costume_brand, undef;
 
         my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
-        $leona->pripara_change($dorothy);   # 
+        $leona->pripara_change($dorothy);   # Leona is always being with Dorothy ...
         is $leona->costume_brand, 'Fortune Party';
     };
 };
@@ -127,13 +107,13 @@ subtest 'Costume' => sub {
     subtest 'lala' => sub {
         $lala->pripara_change;
         is $lala->costume(1), 'Twinkle Ribbon';     # take episode number to argument
-        is $lala->costume(2), 'Wonderland Rabbit Onepiece';
+        is $lala->costume(2), 'Wonderland Macaron Onepiece';
         # ...
     };
     subtest 'mirei' => sub {
         $mirei->pripara_change;
         is $mirei->costume(1), 'Candy à la Mode';
-        is $mirei->costume(2), 'Wonderland Macaron Onepiece';
+        is $mirei->costume(2), 'Wonderland Rabbit Onepiece';
         # ...
     };
     subtest 'sophie' => sub {
