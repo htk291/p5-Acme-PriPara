@@ -10,7 +10,7 @@ subtest 'Charactors' => sub {
         is $lala->firstname,     'Lala';
         is $lala->familyname,    'Manaka';
         is $lala->age,            10;
-        is $lala->voiced_by,     'Akaneya Himika';
+        is $lala->cv,            'Akaneya Himika';
         is $lala->say,           'Kashikoma!';
         is $lala->costume_brand,  undef;    # withiout PriPara Changing, you cannot get costume_brand.
 
@@ -24,10 +24,10 @@ subtest 'Charactors' => sub {
         is $mirei->firstname,  'Mirei';
         is $mirei->familyname, 'Minami';
         is $mirei->age,        '13?';
-        is $mirei->voiced_by,  'Serizawa Yu';
-        is $mirei->say,        '';  # speak nomally
+        is $mirei->cv,         'Serizawa Yu';
+        is $mirei->say,        '計算どおり';  # speak nomally
         
-        my $word = '';
+        my $word = '計算どおり';
         is $mirei->say($word),    $word . 'ぷり';  # speak with suffix ー 'ぷり'
         is $mirei->costume_brand, undef;
 
@@ -41,7 +41,7 @@ subtest 'Charactors' => sub {
         is $sophie->firstname,     'Sophie';
         is $sophie->familyname,    'Hōjō';
         is $sophie->age,           '14?';
-        is $sophie->voiced_by,     'Kubota Miyu';
+        is $sophie->cv,            'Kubota Miyu';
         is $sophie->costume_brand,  undef;
         is $sophie->say,           '';
 
@@ -56,7 +56,7 @@ subtest 'Charactors' => sub {
     subtest 'Shion' => sub {
         my $shion = Acme::PriPara::MainMembers::TodoShion->new;
         is $shion->name,          'Todo Shion';
-        is $shion->voiced_by,     'Yamakita Saki';
+        is $shion->cv,            'Yamakita Saki';
         is $shion->age,           '12?';
         # ...
 
@@ -66,7 +66,7 @@ subtest 'Charactors' => sub {
     subtest 'Dorothy' => sub {
         my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
         is $dorothy->name,        'Dorothy West';
-        is $dorothy->voiced_by,   'Shibuya Azuki';
+        is $dorothy->cv,          'Shibuya Azuki';
         # ...
 
         $dorothy->pripara_change;
@@ -79,14 +79,14 @@ subtest 'Charactors' => sub {
     subtest 'Leona' => sub {
         my $leona = Acme::PriPara::MainMembers::LeonaWest->new;
         is $leona->name,         'Leona West';
-        is $leona->voiced_by,    'Wakai Yuki';
+        is $leona->cv,           'Wakai Yuki';
         # ...
 
         $leona->pripara_change;
         is $leona->costume_brand, undef;
 
         my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
-        $leona->pripara_change($dorothy);   # Leona is always being with Dorothy ...
+        $leona->pripara_change($dorothy);  # Leona is always being with Dorothy ...
         is $leona->costume_brand, 'Fortune Party';
     };
 };
@@ -121,6 +121,18 @@ subtest 'Costume' => sub {
         is $shophie->costume(1),  undef;
         is $shophie->costume(2), 'Holic Trick';
         # ...
+    };
+};
+
+subtest 'Team' => sub {
+    subtest 'Lara and Mirei' => sub {
+        my ($lala, $mirei) = Acme::PriPara->lala_and_mirei;
+    };
+    subtest 'SoLaMi☆ SMILE' => sub {
+        my ($lala, $mirei, $sophie) = Acme::PriPara->solami_smile;
+    };
+    subtest 'Dressing Pafé' => sub {
+        my ($shion, $dorothy, $leona) = Acme::PriPara->dressing_pafé;
     };
 };
 
