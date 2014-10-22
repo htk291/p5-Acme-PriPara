@@ -6,19 +6,7 @@ use parent qw(Exporter);
 
 our $VERSION = "0.01";
 
-use Readonly;
-Readonly our $SoLaMiSMILE => [
-    'ManakaLala',
-    'MinamiMirei',
-    'HōjōSophie',
-];
-Readonly our $DressingPafé => [
-    'ShionTodo',
-    'DorothyWest',
-    'LeonaWest',
-];
-
-
+use Acme::PriPara::MainMembers::ManakaLala;
 
 1;
 __END__
