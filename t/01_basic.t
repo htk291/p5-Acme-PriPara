@@ -4,6 +4,7 @@ use Acme::PriPara;
 use Acme::PriPara::MainMembers::ManakaLala;
 use Acme::PriPara::MainMembers::MinamiMirei;
 use Acme::PriPara::MainMembers::HojoSophie;
+use Acme::PriPara::MainMembers::TodoShion;
 use Test::More;
 use utf8;
 
@@ -56,17 +57,19 @@ subtest 'Charactors' => sub {
         is $sophie->costume_brand, 'Holic Trick';
         #is $sophie->say,           'something';
     };
-#
-#    subtest 'Shion' => sub {
-#        my $shion = Acme::PriPara::MainMembers::TodoShion->new;
-#        is $shion->name,          'Todo Shion';
-#        is $shion->cv,            'Yamakita Saki';
-#        is $shion->age,           '13';
-#        # ...
-#
-#        $shion->pripara_change;
-#        is $shion->costume_brand, 'Baby Monster';
-#    };
+
+    subtest 'Shion' => sub {
+        my $shion = Acme::PriPara::MainMembers::TodoShion->new;
+        is $shion->name,          'Todo Shion';
+        is $shion->firstname,     'Shion';
+        is $shion->lastname,      'Todo';
+        is $shion->age,           '13';
+        is $shion->cv,            'Yamakita Saki';
+        is $shion->costume_brand,  undef;
+
+        $shion->pripara_change;
+        is $shion->costume_brand, 'Baby Monster';
+    };
 #    subtest 'Dorothy' => sub {
 #        my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
 #        is $dorothy->name,        'Dorothy West';
