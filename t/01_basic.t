@@ -1,6 +1,9 @@
 use strict;
 use warnings;
 use Acme::PriPara;
+use Acme::PriPara::MainMembers::ManakaLala;
+use Acme::PriPara::MainMembers::MinamiMirei;
+use Acme::PriPara::MainMembers::HojoSophie;
 use Test::More;
 use utf8;
 
@@ -19,40 +22,40 @@ subtest 'Charactors' => sub {
         is $lala->costume_brand, 'Twinkle Ribbon';  
     };
 
-#    subtest 'Mirei' => sub {
-#        my $mirei = Acme::PriPara::MainMembers::MinamiMirei->new;
-#        is $mirei->name,       'Minami Mirei';
-#        is $mirei->firstname,  'Mirei';
-#        is $mirei->lastname,   'Minami';
-#        is $mirei->age,        '13';
-#        is $mirei->cv,         'Serizawa Yu';
-#        is $mirei->say,        '計算どおり';  # speak nomally
-#        
-#        my $word = '計算どおり';
-#        is $mirei->say($word),    $word . 'ぷり';  # speak with suffix ー 'ぷり'
-#        is $mirei->costume_brand, undef;
-#
-#        $mirei->pripara_change;
-#        is $mirei->costume_brand, 'Candy à la Mode';
-#    };
-#
-#    subtest 'Sophie' => sub {
-#        my $sophie = Acme::PriPara::MainMembers::HōjōSophie->new;
-#        is $sophie->name,          'Hōjō Sophie';
-#        is $sophie->firstname,     'Sophie';
-#        is $sophie->lastname,      'Hōjō';
-#        is $sophie->age,           '14?';
-#        is $sophie->cv,            'Kubota Miyu';
-#        is $sophie->costume_brand,  undef;
-#        is $sophie->say,           '';
-#
-#        $sophie->pripara_change;
-#        is $sophie->costume_brand, undef;     # Sophie attempt to enter the PriPara World...
-#
-#        $sophie->pripara_change('Red Flash'); # Sophie can get to the PriPara World after eating Red Flash
-#        is $sophie->costume_brand, 'Holic Trick';
-#        is $sophie->say,           'something';
-#    };
+    subtest 'Mirei' => sub {
+        my $mirei = Acme::PriPara::MainMembers::MinamiMirei->new;
+        is $mirei->name,       'Minami Mirei';
+        is $mirei->firstname,  'Mirei';
+        is $mirei->lastname,   'Minami';
+        is $mirei->age,        '13';
+        is $mirei->cv,         'Serizawa Yu';
+        #is $mirei->say,        '計算どおり';  # speak nomally
+
+        #my $word = '計算どおり';
+        #is $mirei->say($word),    $word . 'ぷり';  # speak with suffix ー 'ぷり'
+        is $mirei->costume_brand, undef;
+
+        $mirei->pripara_change;
+        is $mirei->costume_brand, 'Candy à la Mode';
+    };
+
+    subtest 'Sophie' => sub {
+        my $sophie = Acme::PriPara::MainMembers::HojoSophie->new;
+        is $sophie->name,          'Hojo Sophie';
+        is $sophie->firstname,     'Sophie';
+        is $sophie->lastname,      'Hojo';
+        is $sophie->age,           '14';
+        is $sophie->cv,            'Kubota Miyu';
+        is $sophie->costume_brand,  undef;
+        #is $sophie->say,           '';
+
+        $sophie->pripara_change;
+        is $sophie->costume_brand,  undef;     # Sophie attempt to enter the PriPara World...
+
+        $sophie->pripara_change('Red Flash'); # Sophie can get to the PriPara World after eating Red Flash
+        is $sophie->costume_brand, 'Holic Trick';
+        #is $sophie->say,           'something';
+    };
 #
 #    subtest 'Shion' => sub {
 #        my $shion = Acme::PriPara::MainMembers::TodoShion->new;

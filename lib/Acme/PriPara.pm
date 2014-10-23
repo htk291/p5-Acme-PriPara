@@ -6,7 +6,7 @@ use parent qw(Exporter);
 
 our $VERSION = "0.01";
 
-use Acme::PriPara::MainMembers::ManakaLala;
+#use Acme::PriPara::MainMembers::ManakaLala;
 
 1;
 __END__
