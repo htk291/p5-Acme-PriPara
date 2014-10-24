@@ -5,6 +5,8 @@ use Acme::PriPara::MainMembers::ManakaLala;
 use Acme::PriPara::MainMembers::MinamiMirei;
 use Acme::PriPara::MainMembers::HojoSophie;
 use Acme::PriPara::MainMembers::TodoShion;
+use Acme::PriPara::MainMembers::DorothyWest;
+use Acme::PriPara::MainMembers::LeonaWest;
 use Test::More;
 use utf8;
 
@@ -70,32 +72,36 @@ subtest 'Charactors' => sub {
         $shion->pripara_change;
         is $shion->costume_brand, 'Baby Monster';
     };
-#    subtest 'Dorothy' => sub {
-#        my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
-#        is $dorothy->name,        'Dorothy West';
-#        is $dorothy->cv,          'Shibuya Azuki';
-#        # ...
-#
-#        $dorothy->pripara_change;
-#        is $dorothy->costume_brand, undef;
-#
-#        my $leona = Acme::PriPara::MainMembers::LeonaWest->new;
-#        $dorothy->pripara_change($leona);  # Dorothy is always being with Leona ...
-#        is $dorothy->costume_brand, 'Fortune Party';
-#    };
-#    subtest 'Leona' => sub {
-#        my $leona = Acme::PriPara::MainMembers::LeonaWest->new;
-#        is $leona->name,         'Leona West';
-#        is $leona->cv,           'Wakai Yuki';
-#        # ...
-#
-#        $leona->pripara_change;
-#        is $leona->costume_brand, undef;
-#
-#        my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
-#        $leona->pripara_change($dorothy);  # Leona is always being with Dorothy ...
-#        is $leona->costume_brand, 'Fortune Party';
-#    };
+    subtest 'Dorothy' => sub {
+        my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
+        is $dorothy->name,        'Dorothy West';
+        is $dorothy->firstname,   'Dorothy';
+        is $dorothy->lastname,    'West';
+        is $dorothy->age,         '13';
+        is $dorothy->cv,          'Shibuya Azuki';
+
+        $dorothy->pripara_change;
+        is $dorothy->costume_brand, undef;
+
+        my $leona = Acme::PriPara::MainMembers::LeonaWest->new;
+        $dorothy->pripara_change($leona);  # Dorothy is always being with Leona ...
+        is $dorothy->costume_brand, 'Fortune Party';
+    };
+    subtest 'Leona' => sub {
+        my $leona = Acme::PriPara::MainMembers::LeonaWest->new;
+        is $leona->name,       'Leona West';
+        is $leona->firstname,  'Leona';
+        is $leona->lastname,   'West';
+        is $leona->age,        '13';
+        is $leona->cv,         'Wakai Yuki';
+
+        $leona->pripara_change;
+        is $leona->costume_brand, undef;
+
+        my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
+        $leona->pripara_change($dorothy);  # Leona is always being with Dorothy ...
+        is $leona->costume_brand, 'Fortune Party';
+    };
 };
 
 #subtest 'Live' => sub {

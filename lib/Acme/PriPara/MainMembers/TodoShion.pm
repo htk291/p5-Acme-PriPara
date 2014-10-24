@@ -15,4 +15,3 @@ lastname: Todo
 age: 13
 cv: Yamakita Saki
 costume_brand: Baby Monster
-
