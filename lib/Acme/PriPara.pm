@@ -61,9 +61,39 @@ Acme::PriPara - It's new $module
 
     use Acme::PriPara;
 
+    my ($lala, $mirei, $sophie, $shion, $dorothy, $leona) = Acme::PriPara->main_members;
+
+    is $lala->name,          '真中 らぁら';
+    is $lala->firstname,     'らぁら';
+    is $lala->lastname,      '真中';
+    is $lala->age,            10;
+    is $lala->cv,            '茜屋日海夏';
+    is $lala->say,           'かしこま！';
+    $lala->pripara_change;
+    is $lala->costume_brand, 'Twinkle Ribbon';  
+
 =head1 DESCRIPTION
 
-Acme::PriPara is ...
+PriPara is a famous Japanese animation.  
+Acme::PriPara provides characters information of PriPara.
+
+=head1 SEE ALSO
+
+=over 4
+
+=item * PriPara Official Site
+
+L<http://www.takaratomy-arts.co.jp/specials/pripara/>
+
+=item * PriPara (Wikipedia - ja)
+
+L<http://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%83%91%E3%83%A9>
+
+=item * PriPara (Wikipedia - ja)
+
+L<http://en.wikipedia.org/wiki/PriPara>
+
+=back
 
 =head1 LICENSE
 

@@ -1,12 +1,6 @@
 use strict;
 use warnings;
 use Acme::PriPara;
-use Acme::PriPara::MainMembers::ManakaLala;
-use Acme::PriPara::MainMembers::MinamiMirei;
-use Acme::PriPara::MainMembers::HojoSophie;
-use Acme::PriPara::MainMembers::TodoShion;
-use Acme::PriPara::MainMembers::DorothyWest;
-use Acme::PriPara::MainMembers::LeonaWest;
 use Test::More;
 use utf8;
 

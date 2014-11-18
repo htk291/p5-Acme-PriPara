@@ -42,6 +42,9 @@
       },
       "runtime" : {
          "requires" : {
+            "Data::Section::Simple" : "0",
+            "Mouse" : "0",
+            "YAML::Tiny" : "0",
             "perl" : "5.008001"
          }
       },
@@ -52,5 +55,20 @@
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/htk291/p5-Acme-PriPara/issues"
+      },
+      "homepage" : "https://github.com/htk291/p5-Acme-PriPara",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/htk291/p5-Acme-PriPara.git",
+         "web" : "https://github.com/htk291/p5-Acme-PriPara"
+      }
+   },
+   "version" : "0.01",
+   "x_contributors" : [
+      "htk291 <htk0129@gmail.com>",
+      "htk291 <htk291@gmail.com>"
+   ]
 }
