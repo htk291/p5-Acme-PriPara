@@ -104,17 +104,6 @@ subtest 'Charactors' => sub {
     };
 };
 
-#subtest 'Main Members' => sub {
-#    my ($lala, $mirei, $sophie, $shion, $dorothy, $leona) = Acme::PriPara->main_members;
-#
-#    is ref $lala,    'Acme::PriPara::MainMembers::ManakaLala';
-#    is ref $mirei,   'Acme::PriPara::MainMembers::MinamiMirei';
-#    is ref $sophie,  'Acme::PriPara::MainMembers::HojoSophie';
-#    is ref $shion,   'Acme::PriPara::MainMembers::TodoShion';
-#    is ref $dorothy, 'Acme::PriPara::MainMembers::DorothyWest';
-#    is ref $leona,   'Acme::PriPara::MainMembers::LeonaWest';
-#};
-
 #subtest 'Live' => sub {
 #    my ($lala, $mirei, $sophie, $shion, $dorothy, $leona) = Acme::PriPara->main_members;
 #
@@ -145,18 +134,6 @@ subtest 'Charactors' => sub {
 #        is $shophie->costume(1),  undef;
 #        is $shophie->costume(2), 'Holic Trick';
 #        # ...
-#    };
-#};
-
-#subtest 'Team' => sub {
-#    subtest 'Lara and Mirei' => sub {
-#        my ($lala, $mirei) = Acme::PriPara->lala_and_mirei;
-#    };
-#    subtest 'SoLaMi☆ SMILE' => sub {
-#        my ($lala, $mirei, $sophie) = Acme::PriPara->solami_smile;
-#    };
-#    subtest 'Dressing Pafé' => sub {
-#        my ($shion, $dorothy, $leona) = Acme::PriPara->dressing_pafé;
 #    };
 #};
 

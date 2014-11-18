@@ -6,27 +6,47 @@ use utf8;
 
 our $VERSION = "0.01";
 
-#use ReadOnly;
-#
-#ReadOnly my $SoLaMi_Smile => [
-#    'ManakaLala',
-#    'MinamiMirei',
-#    'HojoSophie',
-#
-#];
-#ReadOnly my $DressingPafé => [
-#    'TodoShion',
-#    'DorothyWest',
-#    'LeonaWest',
-#];
-#ReadOnly my $MainMembers => [
-#
-#];
-#
-#sub main_members {
-#
-#
-#}
+use Readonly;
+
+Readonly our $Lala_and_Mirei => [
+    'ManakaLala',
+    'MinamiMirei',
+];
+Readonly our $SoLaMi_Smile => [
+    @$Lala_and_Mirei,
+    'HojoSophie',
+];
+
+Readonly our $Dorothy_and_Leona => [
+    'DorothyWest',
+    'LeonaWest',
+];
+Readonly our $DressingPafé => [
+    'TodoShion',
+    @$Dorothy_and_Leona,
+];
+
+Readonly our $MainMembers => [
+    @$SoLaMi_Smile,
+    @$DressingPafé,
+];
+
+sub main_members {
+    my $self = shift;
+    return $self->members_of($MainMembers);
+}
+
+sub members_of {
+    my ($self, $team) = @_;
+    my @members;
+    for my $member_name (@{ $team }) {
+        my $pkg = "Acme::PriPara::MainMembers::$member_name";
+         if (eval "require $pkg;1;") {
+             push @members, $pkg->new;
+        }
+    }
+    return @members;
+}
 
 1;
 __END__
