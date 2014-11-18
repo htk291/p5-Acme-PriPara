@@ -2,11 +2,31 @@ package Acme::PriPara;
 use 5.008001;
 use strict;
 use warnings;
-use parent qw(Exporter); 
+use utf8;
 
 our $VERSION = "0.01";
 
-#use Acme::PriPara::MainMembers::ManakaLala;
+#use ReadOnly;
+#
+#ReadOnly my $SoLaMi_Smile => [
+#    'ManakaLala',
+#    'MinamiMirei',
+#    'HojoSophie',
+#
+#];
+#ReadOnly my $DressingPafé => [
+#    'TodoShion',
+#    'DorothyWest',
+#    'LeonaWest',
+#];
+#ReadOnly my $MainMembers => [
+#
+#];
+#
+#sub main_members {
+#
+#
+#}
 
 1;
 __END__
