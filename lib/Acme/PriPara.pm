@@ -74,6 +74,8 @@ Acme::PriPara - It's new $module
 
 =head1 DESCRIPTION
 
+SEE CONCEPT AT L<https://github.com/htk291/p5-Acme-PriPara/blob/master/etc/90_concept.t>
+
 PriPara is a famous Japanese animation.  
 Acme::PriPara provides characters information of PriPara.
 
@@ -85,7 +87,7 @@ Acme::PriPara provides characters information of PriPara.
 
 L<http://www.takaratomy-arts.co.jp/specials/pripara/>
 
-=item * PriPara (Wikipedia - ja)
+=item * プリパラ (Wikipedia - ja)
 
 L<http://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%83%91%E3%83%A9>
 
