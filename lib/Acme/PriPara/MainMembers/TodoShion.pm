@@ -10,8 +10,8 @@ no Mouse;
 __DATA__
 
 @@ TodoShion
-firstname: シオン
-lastname: 東堂
+firstname: Shion
+lastname: Todo
 age: 13
-cv: 山北早紀
+cv: Yamakita Saki
 costume_brand: Baby Monster

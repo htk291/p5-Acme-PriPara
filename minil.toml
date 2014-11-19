@@ -1,4 +1,4 @@
 name = "Acme-PriPara"
-badges = ["travis", "coveralls"]
+# badges = ["travis"]
 module_maker="ModuleBuildTiny"
 

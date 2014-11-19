@@ -16,8 +16,8 @@ sub pripara_change { #override
 __DATA__
 
 @@ MinamiMirei
-firstname: そふぃ
-lastname: 北条
+firstname: Sophie
+lastname: Hojo
 age: 14
-cv: 久保田未夢
+cv: Kubota Miyu
 costume_brand: Holic Trick

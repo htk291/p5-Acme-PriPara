@@ -10,9 +10,8 @@ no Mouse;
 __DATA__
 
 @@ ManakaLala
-firstname: らぁら
-lastname: 真中
+firstname: Lala
+lastname: Manaka
 age: 10
-cv: 茜屋日海夏
-say: かしこま！
+cv: Akaneya Himika
 costume_brand: Twinkle Ribbon

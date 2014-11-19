@@ -13,6 +13,7 @@ has has_pripara_changed => (
     default  => 0,
 );
 
+
 no Mouse;
 
 sub name {
@@ -38,11 +39,6 @@ sub age {
 sub cv {
     my ($self) = @_; 
     return $self->{cv}; 
-}
-
-sub say {
-    my ($self) = @_; 
-    return $self->{say}; 
 }
 
 sub costume_brand {

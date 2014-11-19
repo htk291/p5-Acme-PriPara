@@ -10,8 +10,8 @@ no Mouse;
 __DATA__
 
 @@ MinamiMirei
-firstname: みれぃ
-lastname: 南
+firstname: Mirei
+lastname: Minami
 age: 13
-cv: 芹澤優
+cv: Serizawa Yu
 costume_brand: Candy à la Mode
