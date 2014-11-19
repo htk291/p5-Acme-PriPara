@@ -13,12 +13,12 @@ use utf8;
 subtest 'Charactors' => sub {
     subtest 'Lala' => sub {
         my $lala = Acme::PriPara::MainMembers::ManakaLala->new;
-        is $lala->name,          'Manaka Lala';
-        is $lala->firstname,     'Lala';
-        is $lala->lastname,      'Manaka';
+        is $lala->name,          '真中 らぁら';
+        is $lala->firstname,     'らぁら';
+        is $lala->lastname,      '真中';
         is $lala->age,            10;
-        is $lala->cv,            'Akaneya Himika';
-        #is $lala->say,           'Kashikoma!';
+        is $lala->cv,            '茜屋日海夏';
+        is $lala->say,           'かしこま！';
         is $lala->costume_brand,  undef;    # withiout PriPara Changing, you cannot get costume_brand.
 
         $lala->pripara_change;
@@ -27,11 +27,11 @@ subtest 'Charactors' => sub {
 
     subtest 'Mirei' => sub {
         my $mirei = Acme::PriPara::MainMembers::MinamiMirei->new;
-        is $mirei->name,       'Minami Mirei';
-        is $mirei->firstname,  'Mirei';
-        is $mirei->lastname,   'Minami';
+        is $mirei->name,       '南 みれぃ';
+        is $mirei->firstname,  'みれぃ';
+        is $mirei->lastname,   '南';
         is $mirei->age,        '13';
-        is $mirei->cv,         'Serizawa Yu';
+        is $mirei->cv,         '芹澤優';
         #is $mirei->say,        '計算どおり';  # speak nomally
 
         #my $word = '計算どおり';
@@ -44,11 +44,11 @@ subtest 'Charactors' => sub {
 
     subtest 'Sophie' => sub {
         my $sophie = Acme::PriPara::MainMembers::HojoSophie->new;
-        is $sophie->name,          'Hojo Sophie';
-        is $sophie->firstname,     'Sophie';
-        is $sophie->lastname,      'Hojo';
+        is $sophie->name,          '北条 そふぃ';
+        is $sophie->firstname,     'そふぃ';
+        is $sophie->lastname,      '北条';
         is $sophie->age,           '14';
-        is $sophie->cv,            'Kubota Miyu';
+        is $sophie->cv,            '久保田未夢';
         is $sophie->costume_brand,  undef;
         #is $sophie->say,           '';
 
@@ -62,11 +62,11 @@ subtest 'Charactors' => sub {
 
     subtest 'Shion' => sub {
         my $shion = Acme::PriPara::MainMembers::TodoShion->new;
-        is $shion->name,          'Todo Shion';
-        is $shion->firstname,     'Shion';
-        is $shion->lastname,      'Todo';
+        is $shion->name,          '東堂 シオン';
+        is $shion->firstname,     'シオン';
+        is $shion->lastname,      '東堂';
         is $shion->age,           '13';
-        is $shion->cv,            'Yamakita Saki';
+        is $shion->cv,            '山北早紀';
         is $shion->costume_brand,  undef;
 
         $shion->pripara_change;
@@ -74,11 +74,11 @@ subtest 'Charactors' => sub {
     };
     subtest 'Dorothy' => sub {
         my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
-        is $dorothy->name,        'Dorothy West';
-        is $dorothy->firstname,   'Dorothy';
-        is $dorothy->lastname,    'West';
+        is $dorothy->name,        'ドロシー・ウェスト';
+        is $dorothy->firstname,   'ドロシー';
+        is $dorothy->lastname,    'ウェスト';
         is $dorothy->age,         '13';
-        is $dorothy->cv,          'Shibuya Azuki';
+        is $dorothy->cv,          '澁谷梓希';
 
         $dorothy->pripara_change;
         is $dorothy->costume_brand, undef;
@@ -89,11 +89,11 @@ subtest 'Charactors' => sub {
     };
     subtest 'Leona' => sub {
         my $leona = Acme::PriPara::MainMembers::LeonaWest->new;
-        is $leona->name,       'Leona West';
-        is $leona->firstname,  'Leona';
-        is $leona->lastname,   'West';
+        is $leona->name,       'レオナ・ウェスト';
+        is $leona->firstname,  'レオナ';
+        is $leona->lastname,   'ウェスト';
         is $leona->age,        '13';
-        is $leona->cv,         'Wakai Yuki';
+        is $leona->cv,         '若井友希';
 
         $leona->pripara_change;
         is $leona->costume_brand, undef;
@@ -134,18 +134,6 @@ subtest 'Charactors' => sub {
 #        is $shophie->costume(1),  undef;
 #        is $shophie->costume(2), 'Holic Trick';
 #        # ...
-#    };
-#};
-
-#subtest 'Team' => sub {
-#    subtest 'Lara and Mirei' => sub {
-#        my ($lala, $mirei) = Acme::PriPara->lala_and_mirei;
-#    };
-#    subtest 'SoLaMi☆ SMILE' => sub {
-#        my ($lala, $mirei, $sophie) = Acme::PriPara->solami_smile;
-#    };
-#    subtest 'Dressing Pafé' => sub {
-#        my ($shion, $dorothy, $leona) = Acme::PriPara->dressing_pafé;
 #    };
 #};
 

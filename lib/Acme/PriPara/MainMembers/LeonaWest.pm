@@ -7,7 +7,7 @@ no Mouse;
 
 sub name {
     my ($self) = @_;
-    return $self->firstname . ' ' . $self->lastname;
+    return $self->firstname . '・' . $self->lastname;
 }
 
 sub pripara_change {
@@ -21,8 +21,8 @@ sub pripara_change {
 __DATA__
 
 @@ LeonaWest
-firstname: Leona
-lastname: West
+firstname: レオナ
+lastname: ウェスト
 age: 13
-cv: Wakai Yuki
+cv: 若井友希
 costume_brand: Fortune Party
