@@ -21,14 +21,14 @@ Readonly our $Dorothy_and_Leona => [
     'DorothyWest',
     'LeonaWest',
 ];
-Readonly our $DressingPafé => [
+Readonly our $Dressing_Pafé => [
     'TodoShion',
     @$Dorothy_and_Leona,
 ];
 
 Readonly our $MainMembers => [
     @$SoLaMi_Smile,
-    @$DressingPafé,
+    @$Dressing_Pafé,
 ];
 
 sub main_members {

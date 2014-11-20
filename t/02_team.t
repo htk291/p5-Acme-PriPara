@@ -34,8 +34,8 @@ subtest 'Team' => sub {
         is ref $dorothy, 'Acme::PriPara::MainMembers::DorothyWest';
         is ref $leona,   'Acme::PriPara::MainMembers::LeonaWest';
     };
-    subtest 'DressingPafé' => sub {
-        my ($shion, $dorothy, $leona) = Acme::PriPara->members_of($Acme::PriPara::DressingPafé);
+    subtest 'Dressing_Pafé' => sub {
+        my ($shion, $dorothy, $leona) = Acme::PriPara->members_of($Acme::PriPara::Dressing_Pafé);
 
         is ref $shion,   'Acme::PriPara::MainMembers::TodoShion';
         is ref $dorothy, 'Acme::PriPara::MainMembers::DorothyWest';

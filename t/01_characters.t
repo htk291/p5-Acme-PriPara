@@ -104,38 +104,5 @@ subtest 'Charactors' => sub {
     };
 };
 
-#subtest 'Live' => sub {
-#    my ($lala, $mirei, $sophie, $shion, $dorothy, $leona) = Acme::PriPara->main_members;
-#
-#    is (sing($lala, $mirei), 'Marble Make up a-ha-ha!');
-#    is (sing($sophie), 'Solar Flare Sherbet');
-#    is (sing($lala, $mirei, $sophie), 'Pretty Prism Paradise!!!');
-#    is (sing($lala, $sophie), 'Make it!');
-#    is (sing($shion, $dorothy, $leona), 'No D&D code');
-#};
-
-#subtest 'Costume' => sub {
-#    my ($lala, $mirei, $sophie, $shion, $dorothy, $leona) = Acme::PriPara->main_members;
-#
-#    subtest 'lala' => sub {
-#        $lala->pripara_change;
-#        is $lala->costume(1), 'Twinkle Ribbon';     # take episode number to argument
-#        is $lala->costume(2), 'Wonderland Macaron Onepiece';
-#        # ...
-#    };
-#    subtest 'mirei' => sub {
-#        $mirei->pripara_change;
-#        is $mirei->costume(1), 'Candy à la Mode';
-#        is $mirei->costume(2), 'Wonderland Rabbit Onepiece';
-#        # ...
-#    };
-#    subtest 'sophie' => sub {
-#        $shophie->pripara_change('Red Flash');
-#        is $shophie->costume(1),  undef;
-#        is $shophie->costume(2), 'Holic Trick';
-#        # ...
-#    };
-#};
-
 done_testing;
 
