@@ -30,7 +30,7 @@ subtest 'Charactors' => sub {
         is $mirei->name,       '南 みれぃ';
         is $mirei->firstname,  'みれぃ';
         is $mirei->lastname,   '南';
-        is $mirei->age,        '13';
+        is $mirei->age,         13;
         is $mirei->cv,         '芹澤優';
         #is $mirei->say,        '計算どおり';  # speak nomally
 
@@ -47,7 +47,7 @@ subtest 'Charactors' => sub {
         is $sophie->name,          '北条 そふぃ';
         is $sophie->firstname,     'そふぃ';
         is $sophie->lastname,      '北条';
-        is $sophie->age,           '14';
+        is $sophie->age,            14;
         is $sophie->cv,            '久保田未夢';
         is $sophie->costume_brand,  undef;
         #is $sophie->say,           '';
@@ -65,7 +65,7 @@ subtest 'Charactors' => sub {
         is $shion->name,          '東堂 シオン';
         is $shion->firstname,     'シオン';
         is $shion->lastname,      '東堂';
-        is $shion->age,           '13';
+        is $shion->age,            13;
         is $shion->cv,            '山北早紀';
         is $shion->costume_brand,  undef;
 
@@ -77,7 +77,7 @@ subtest 'Charactors' => sub {
         is $dorothy->name,        'ドロシー・ウェスト';
         is $dorothy->firstname,   'ドロシー';
         is $dorothy->lastname,    'ウェスト';
-        is $dorothy->age,         '13';
+        is $dorothy->age,          13;
         is $dorothy->cv,          '澁谷梓希';
 
         $dorothy->pripara_change;
@@ -92,7 +92,7 @@ subtest 'Charactors' => sub {
         is $leona->name,       'レオナ・ウェスト';
         is $leona->firstname,  'レオナ';
         is $leona->lastname,   'ウェスト';
-        is $leona->age,        '13';
+        is $leona->age,         13;
         is $leona->cv,         '若井友希';
 
         $leona->pripara_change;
