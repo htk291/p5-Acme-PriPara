@@ -9,14 +9,15 @@ Acme::PriPara - It's new $module
 
     my ($lala, $mirei, $sophie, $shion, $dorothy, $leona) = Acme::PriPara->main_members;
 
-    is $lala->name,          '真中 らぁら';
-    is $lala->firstname,     'らぁら';
-    is $lala->lastname,      '真中';
-    is $lala->age,            10;
-    is $lala->cv,            '茜屋日海夏';
-    is $lala->say,           'かしこま！';
+    $lala->name;            # => 真中 らぁら
+    $lala->firstname;       # => らぁら
+    $lala->lastname;        # => 真中
+    $lala->age;             # => 10
+    $lala->birthday;        # => 11/20
+    $lala->cv;              # => 茜屋日海夏
+    $lala->say;             # => かしこま！
     $lala->pripara_change;
-    is $lala->costume_brand, 'Twinkle Ribbon';  
+    $lala->costume_brand;   # => Twinkle Ribbon
 
 # DESCRIPTION
 
@@ -35,7 +36,7 @@ Acme::PriPara provides characters information of PriPara.
 
     [http://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%83%91%E3%83%A9](http://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%83%91%E3%83%A9)
 
-- PriPara (Wikipedia - ja)
+- PriPara (Wikipedia - en)
 
     [http://en.wikipedia.org/wiki/PriPara](http://en.wikipedia.org/wiki/PriPara)
 

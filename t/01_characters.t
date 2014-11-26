@@ -17,6 +17,7 @@ subtest 'Charactors' => sub {
         is $lala->firstname,     'らぁら';
         is $lala->lastname,      '真中';
         is $lala->age,            10;
+        is $lala->birthday,      '11/20';
         is $lala->cv,            '茜屋日海夏';
         is $lala->say,           'かしこま！';
         is $lala->costume_brand,  undef;    # withiout PriPara Changing, you cannot get costume_brand.
@@ -31,6 +32,7 @@ subtest 'Charactors' => sub {
         is $mirei->firstname,  'みれぃ';
         is $mirei->lastname,   '南';
         is $mirei->age,         13;
+        is $mirei->birthday,    undef;
         is $mirei->cv,         '芹澤優';
         #is $mirei->say,        '計算どおり';  # speak nomally
 
@@ -48,6 +50,7 @@ subtest 'Charactors' => sub {
         is $sophie->firstname,     'そふぃ';
         is $sophie->lastname,      '北条';
         is $sophie->age,            14;
+        is $sophie->birthday,       undef;
         is $sophie->cv,            '久保田未夢';
         is $sophie->costume_brand,  undef;
         #is $sophie->say,           '';
@@ -66,6 +69,7 @@ subtest 'Charactors' => sub {
         is $shion->firstname,     'シオン';
         is $shion->lastname,      '東堂';
         is $shion->age,            13;
+        is $shion->birthday,       undef;
         is $shion->cv,            '山北早紀';
         is $shion->costume_brand,  undef;
 
@@ -78,6 +82,7 @@ subtest 'Charactors' => sub {
         is $dorothy->firstname,   'ドロシー';
         is $dorothy->lastname,    'ウェスト';
         is $dorothy->age,          13;
+        is $dorothy->birthday,     undef;
         is $dorothy->cv,          '澁谷梓希';
 
         $dorothy->pripara_change;
@@ -93,6 +98,7 @@ subtest 'Charactors' => sub {
         is $leona->firstname,  'レオナ';
         is $leona->lastname,   'ウェスト';
         is $leona->age,         13;
+        is $leona->birthday,    undef;
         is $leona->cv,         '若井友希';
 
         $leona->pripara_change;

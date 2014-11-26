@@ -67,6 +67,7 @@ Acme::PriPara - It's new $module
     $lala->firstname;       # => らぁら
     $lala->lastname;        # => 真中
     $lala->age;             # => 10
+    $lala->birthday;        # => 11/20
     $lala->cv;              # => 茜屋日海夏
     $lala->say;             # => かしこま！
     $lala->pripara_change;

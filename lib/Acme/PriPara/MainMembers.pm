@@ -35,6 +35,11 @@ sub age {
     return $self->{age}; 
 }
 
+sub birthday {
+    my ($self) = @_; 
+    return $self->{birthday}; 
+}
+
 sub cv {
     my ($self) = @_; 
     return $self->{cv}; 
