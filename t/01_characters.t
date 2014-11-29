@@ -19,6 +19,7 @@ subtest 'Charactors' => sub {
         is $lala->age,            10;
         is $lala->birthday,      '11/20';
         is $lala->cv,            '茜屋日海夏';
+        is $lala->voiced_by,     '茜屋日海夏';
         is $lala->say,           'かしこま！';
         is $lala->costume_brand,  undef;    # withiout PriPara Changing, you cannot get costume_brand.
 
@@ -34,10 +35,7 @@ subtest 'Charactors' => sub {
         is $mirei->age,         13;
         is $mirei->birthday,    undef;
         is $mirei->cv,         '芹澤優';
-        #is $mirei->say,        '計算どおり';  # speak nomally
-
-        #my $word = '計算どおり';
-        #is $mirei->say($word),    $word . 'ぷり';  # speak with suffix ー 'ぷり'
+        is $mirei->voiced_by,  '芹澤優';
         is $mirei->costume_brand, undef;
 
         $mirei->pripara_change;
@@ -52,15 +50,14 @@ subtest 'Charactors' => sub {
         is $sophie->age,            14;
         is $sophie->birthday,       undef;
         is $sophie->cv,            '久保田未夢';
+        is $sophie->voiced_by,     '久保田未夢';
         is $sophie->costume_brand,  undef;
-        #is $sophie->say,           '';
 
-        $sophie->pripara_change;
-        is $sophie->costume_brand,  undef;     # Sophie attempt to enter the PriPara World...
+        $sophie->pripara_change;    # Sophie attempt to enter the PriPara World...
+        is $sophie->costume_brand,  undef;
 
         $sophie->pripara_change('Red Flash'); # Sophie can get to the PriPara World after eating Red Flash
         is $sophie->costume_brand, 'Holic Trick';
-        #is $sophie->say,           'something';
     };
 
     subtest 'Shion' => sub {
@@ -71,6 +68,7 @@ subtest 'Charactors' => sub {
         is $shion->age,            13;
         is $shion->birthday,       undef;
         is $shion->cv,            '山北早紀';
+        is $shion->voiced_by,     '山北早紀';
         is $shion->costume_brand,  undef;
 
         $shion->pripara_change;
@@ -84,6 +82,7 @@ subtest 'Charactors' => sub {
         is $dorothy->age,          13;
         is $dorothy->birthday,     undef;
         is $dorothy->cv,          '澁谷梓希';
+        is $dorothy->voiced_by,   '澁谷梓希';
 
         $dorothy->pripara_change;
         is $dorothy->costume_brand, undef;
@@ -100,6 +99,7 @@ subtest 'Charactors' => sub {
         is $leona->age,         13;
         is $leona->birthday,    undef;
         is $leona->cv,         '若井友希';
+        is $leona->voiced_by,  '若井友希';
 
         $leona->pripara_change;
         is $leona->costume_brand, undef;

@@ -45,6 +45,9 @@ sub cv {
     return $self->{cv}; 
 }
 
+# alias to voiced_by
+*voiced_by = \&cv;
+
 sub say {
     my ($self) = @_; 
     return $self->{say}; 
