@@ -23,5 +23,6 @@ __DATA__
 firstname: ドロシー
 lastname: ウェスト
 age: 13
+birthday: 2/5
 cv: 澁谷梓希
 costume_brand: Fortune Party

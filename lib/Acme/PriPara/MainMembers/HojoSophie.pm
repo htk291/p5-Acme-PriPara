@@ -19,5 +19,6 @@ __DATA__
 firstname: そふぃ
 lastname: 北条
 age: 14
+birthday: 7/30
 cv: 久保田未夢
 costume_brand: Holic Trick
