@@ -33,7 +33,7 @@ subtest 'Charactors' => sub {
         is $mirei->firstname,  'みれぃ';
         is $mirei->lastname,   '南';
         is $mirei->age,         13;
-        is $mirei->birthday,    undef;
+        is $mirei->birthday,   '10/1';
         is $mirei->cv,         '芹澤優';
         is $mirei->voiced_by,  '芹澤優';
         is $mirei->costume_brand, undef;
@@ -48,7 +48,7 @@ subtest 'Charactors' => sub {
         is $sophie->firstname,     'そふぃ';
         is $sophie->lastname,      '北条';
         is $sophie->age,            14;
-        is $sophie->birthday,       undef;
+        is $sophie->birthday,      '7/30';
         is $sophie->cv,            '久保田未夢';
         is $sophie->voiced_by,     '久保田未夢';
         is $sophie->costume_brand,  undef;
@@ -66,7 +66,7 @@ subtest 'Charactors' => sub {
         is $shion->firstname,     'シオン';
         is $shion->lastname,      '東堂';
         is $shion->age,            13;
-        is $shion->birthday,       undef;
+        is $shion->birthday,      '1/5';
         is $shion->cv,            '山北早紀';
         is $shion->voiced_by,     '山北早紀';
         is $shion->costume_brand,  undef;
@@ -80,7 +80,7 @@ subtest 'Charactors' => sub {
         is $dorothy->firstname,   'ドロシー';
         is $dorothy->lastname,    'ウェスト';
         is $dorothy->age,          13;
-        is $dorothy->birthday,     undef;
+        is $dorothy->birthday,    '2/5';
         is $dorothy->cv,          '澁谷梓希';
         is $dorothy->voiced_by,   '澁谷梓希';
 
@@ -97,7 +97,7 @@ subtest 'Charactors' => sub {
         is $leona->firstname,  'レオナ';
         is $leona->lastname,   'ウェスト';
         is $leona->age,         13;
-        is $leona->birthday,    undef;
+        is $leona->birthday,   '2/5';
         is $leona->cv,         '若井友希';
         is $leona->voiced_by,  '若井友希';
 
