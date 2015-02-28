@@ -1,4 +1,4 @@
-package Acme::PriPara::MainMembers::LeonaWest;
+package Acme::PriPara::MainMembers::ReonaWest;
 use Mouse;
 extends 'Acme::PriPara::MainMembers';
 use utf8;
@@ -20,7 +20,7 @@ sub pripara_change {
 
 __DATA__
 
-@@ LeonaWest
+@@ ReonaWest
 firstname: レオナ
 lastname: ウェスト
 age: 13

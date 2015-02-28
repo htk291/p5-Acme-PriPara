@@ -1,18 +1,18 @@
 use strict;
 use warnings;
 use Acme::PriPara;
-use Acme::PriPara::MainMembers::ManakaLala;
+use Acme::PriPara::MainMembers::ManakaLaara;
 use Acme::PriPara::MainMembers::MinamiMirei;
-use Acme::PriPara::MainMembers::HojoSophie;
-use Acme::PriPara::MainMembers::TodoShion;
+use Acme::PriPara::MainMembers::HojoSophy;
+use Acme::PriPara::MainMembers::TodoSion;
 use Acme::PriPara::MainMembers::DorothyWest;
-use Acme::PriPara::MainMembers::LeonaWest;
+use Acme::PriPara::MainMembers::ReonaWest;
 use Test::More;
 use utf8;
 
 subtest 'Charactors' => sub {
     subtest 'Lala' => sub {
-        my $lala = Acme::PriPara::MainMembers::ManakaLala->new;
+        my $lala = Acme::PriPara::MainMembers::ManakaLaara->new;
         is $lala->name,          '真中 らぁら';
         is $lala->firstname,     'らぁら';
         is $lala->lastname,      '真中';
@@ -43,7 +43,7 @@ subtest 'Charactors' => sub {
     };
 
     subtest 'Sophie' => sub {
-        my $sophie = Acme::PriPara::MainMembers::HojoSophie->new;
+        my $sophie = Acme::PriPara::MainMembers::HojoSophy->new;
         is $sophie->name,          '北条 そふぃ';
         is $sophie->firstname,     'そふぃ';
         is $sophie->lastname,      '北条';
@@ -61,7 +61,7 @@ subtest 'Charactors' => sub {
     };
 
     subtest 'Shion' => sub {
-        my $shion = Acme::PriPara::MainMembers::TodoShion->new;
+        my $shion = Acme::PriPara::MainMembers::TodoSion->new;
         is $shion->name,          '東堂 シオン';
         is $shion->firstname,     'シオン';
         is $shion->lastname,      '東堂';
@@ -87,12 +87,12 @@ subtest 'Charactors' => sub {
         $dorothy->pripara_change;
         is $dorothy->costume_brand, undef;
 
-        my $leona = Acme::PriPara::MainMembers::LeonaWest->new;
+        my $leona = Acme::PriPara::MainMembers::ReonaWest->new;
         $dorothy->pripara_change($leona);  # Dorothy is always being with Leona ...
         is $dorothy->costume_brand, 'Fortune Party';
     };
     subtest 'Leona' => sub {
-        my $leona = Acme::PriPara::MainMembers::LeonaWest->new;
+        my $leona = Acme::PriPara::MainMembers::ReonaWest->new;
         is $leona->name,       'レオナ・ウェスト';
         is $leona->firstname,  'レオナ';
         is $leona->lastname,   'ウェスト';

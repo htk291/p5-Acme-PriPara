@@ -1,4 +1,4 @@
-package Acme::PriPara::MainMembers::ManakaLala;
+package Acme::PriPara::MainMembers::ManakaLaara;
 use Mouse;
 extends 'Acme::PriPara::MainMembers';
 use utf8;
@@ -9,7 +9,7 @@ no Mouse;
 
 __DATA__
 
-@@ ManakaLala
+@@ ManakaLaara
 firstname: らぁら
 lastname: 真中
 age: 10

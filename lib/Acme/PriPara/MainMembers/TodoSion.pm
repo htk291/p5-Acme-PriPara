@@ -1,4 +1,4 @@
-package Acme::PriPara::MainMembers::TodoShion;
+package Acme::PriPara::MainMembers::TodoSion;
 use Mouse;
 extends 'Acme::PriPara::MainMembers';
 use utf8;
@@ -9,7 +9,7 @@ no Mouse;
 
 __DATA__
 
-@@ TodoShion
+@@ TodoSion
 firstname: シオン
 lastname: 東堂
 age: 13
