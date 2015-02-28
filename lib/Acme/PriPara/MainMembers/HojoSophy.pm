@@ -1,4 +1,4 @@
-package Acme::PriPara::MainMembers::HojoSophie;
+package Acme::PriPara::MainMembers::HojoSophy;
 use Mouse;
 extends 'Acme::PriPara::MainMembers';
 use utf8;
@@ -15,7 +15,7 @@ sub pripara_change { #override
 
 __DATA__
 
-@@ MinamiMirei
+@@ HojoSophy
 firstname: そふぃ
 lastname: 北条
 age: 14

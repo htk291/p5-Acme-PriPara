@@ -12,7 +12,7 @@ sub name {
 
 sub pripara_change {
     my ($self, $twin) = @_;
-    $self->{has_pripara_changed} = 1 if ref $twin eq 'Acme::PriPara::MainMembers::LeonaWest';
+    $self->{has_pripara_changed} = 1 if ref $twin eq 'Acme::PriPara::MainMembers::ReonaWest';
 }
 
 1;

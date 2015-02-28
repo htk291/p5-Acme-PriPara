@@ -6,40 +6,40 @@ use utf8;
 
 subtest 'Team' => sub {
     subtest 'Main Members' => sub {
-        my ($lala, $mirei, $sophie, $shion, $dorothy, $leona) = Acme::PriPara->main_members;
+        my ($laara, $mirei, $sophy, $sion, $dorothy, $reona) = Acme::PriPara->main_members;
 
-        is ref $lala,    'Acme::PriPara::MainMembers::ManakaLala';
-        is ref $mirei,   'Acme::PriPara::MainMembers::MinamiMirei';
-        is ref $sophie,  'Acme::PriPara::MainMembers::HojoSophie';
-        is ref $shion,   'Acme::PriPara::MainMembers::TodoShion';
-        is ref $dorothy, 'Acme::PriPara::MainMembers::DorothyWest';
-        is ref $leona,   'Acme::PriPara::MainMembers::LeonaWest';
+        is ref $laara,      'Acme::PriPara::MainMembers::ManakaLaara';
+        is ref $mirei,      'Acme::PriPara::MainMembers::MinamiMirei';
+        is ref $sophy,      'Acme::PriPara::MainMembers::HojoSophy';
+        is ref $sion,       'Acme::PriPara::MainMembers::TodoSion';
+        is ref $dorothy,    'Acme::PriPara::MainMembers::DorothyWest';
+        is ref $reona,      'Acme::PriPara::MainMembers::ReonaWest';
     };
-    subtest 'Lara and Mirei' => sub {
-        my ($lala, $mirei) = Acme::PriPara->members_of($Acme::PriPara::Lala_and_Mirei);
+    subtest 'Laara and Mirei' => sub {
+        my ($laara, $mirei) = Acme::PriPara->members_of($Acme::PriPara::Laara_and_Mirei);
 
-        is ref $lala,    'Acme::PriPara::MainMembers::ManakaLala';
-        is ref $mirei,   'Acme::PriPara::MainMembers::MinamiMirei';
+        is ref $laara,      'Acme::PriPara::MainMembers::ManakaLaara';
+        is ref $mirei,      'Acme::PriPara::MainMembers::MinamiMirei';
     };
     subtest 'SoLaMiSmile' => sub {
-        my ($lala, $mirei, $sophie) = Acme::PriPara->members_of($Acme::PriPara::SoLaMi_Smile);
+        my ($laara, $mirei, $sophy) = Acme::PriPara->members_of($Acme::PriPara::SoLaMi_Smile);
 
-        is ref $lala,    'Acme::PriPara::MainMembers::ManakaLala';
-        is ref $mirei,   'Acme::PriPara::MainMembers::MinamiMirei';
-        is ref $sophie,  'Acme::PriPara::MainMembers::HojoSophie';
+        is ref $laara,      'Acme::PriPara::MainMembers::ManakaLaara';
+        is ref $mirei,      'Acme::PriPara::MainMembers::MinamiMirei';
+        is ref $sophy,      'Acme::PriPara::MainMembers::HojoSophy';
     };
-    subtest 'Dorothy_and_Leona' => sub {
-        my ($dorothy, $leona) = Acme::PriPara->members_of($Acme::PriPara::Dorothy_and_Leona);
+    subtest 'Dorothy_and_Reona' => sub {
+        my ($dorothy, $reona) = Acme::PriPara->members_of($Acme::PriPara::Dorothy_and_Reona);
 
-        is ref $dorothy, 'Acme::PriPara::MainMembers::DorothyWest';
-        is ref $leona,   'Acme::PriPara::MainMembers::LeonaWest';
+        is ref $dorothy,    'Acme::PriPara::MainMembers::DorothyWest';
+        is ref $reona,      'Acme::PriPara::MainMembers::ReonaWest';
     };
     subtest 'Dressing_Pafé' => sub {
-        my ($shion, $dorothy, $leona) = Acme::PriPara->members_of($Acme::PriPara::Dressing_Pafé);
+        my ($sion, $dorothy, $reona) = Acme::PriPara->members_of($Acme::PriPara::Dressing_Pafé);
 
-        is ref $shion,   'Acme::PriPara::MainMembers::TodoShion';
-        is ref $dorothy, 'Acme::PriPara::MainMembers::DorothyWest';
-        is ref $leona,   'Acme::PriPara::MainMembers::LeonaWest';
+        is ref $sion,       'Acme::PriPara::MainMembers::TodoSion';
+        is ref $dorothy,    'Acme::PriPara::MainMembers::DorothyWest';
+        is ref $reona,      'Acme::PriPara::MainMembers::ReonaWest';
     };
 };
 
