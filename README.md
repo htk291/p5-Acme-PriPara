@@ -7,17 +7,17 @@ Acme::PriPara - It's new $module
 
     use Acme::PriPara;
 
-    my ($lala, $mirei, $sophie, $shion, $dorothy, $leona) = Acme::PriPara->main_members;
+    my ($laara, $mirei, $sophy, $sion, $dorothy, $reona) = Acme::PriPara->main_members;
 
-    $lala->name;            # => 真中 らぁら
-    $lala->firstname;       # => らぁら
-    $lala->lastname;        # => 真中
-    $lala->age;             # => 10
-    $lala->birthday;        # => 11/20
-    $lala->cv;              # => 茜屋日海夏
-    $lala->say;             # => かしこま！
-    $lala->pripara_change;
-    $lala->costume_brand;   # => Twinkle Ribbon
+    $laara->name;            # => 真中 らぁら
+    $laara->firstname;       # => らぁら
+    $laara->lastname;        # => 真中
+    $laara->age;             # => 10
+    $laara->birthday;        # => 11/20
+    $laara->cv;              # => 茜屋日海夏
+    $laara->say;             # => かしこま！
+    $laara->pripara_change;
+    $laara->costume_brand;   # => Twinkle Ribbon
 
 # DESCRIPTION
 
