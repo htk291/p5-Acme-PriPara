@@ -8,12 +8,12 @@ our $VERSION = "0.01";
 
 use Readonly;
 
-Readonly our $Laara_and_Mirei => [
-    'ManakaLaara',
+Readonly our $Laala_and_Mirei => [
+    'ManakaLaala',
     'MinamiMirei',
 ];
 Readonly our $SoLaMi_Smile => [
-    @$Laara_and_Mirei,
+    @$Laala_and_Mirei,
     'HojoSophy',
 ];
 
@@ -63,15 +63,16 @@ Acme::PriPara - It's new $module
 
     my ($laara, $mirei, $sophy, $sion, $dorothy, $reona) = Acme::PriPara->main_members;
 
-    $laara->name;            # => 真中 らぁら
-    $laara->firstname;       # => らぁら
-    $laara->lastname;        # => 真中
-    $laara->age;             # => 10
-    $laara->birthday;        # => 11/20
-    $laara->cv;              # => 茜屋日海夏
-    $laara->say;             # => かしこま！
-    $laara->pripara_change;
-    $laara->costume_brand;   # => Twinkle Ribbon
+    print $laara->name;            # => 真中 らぁら
+    print $laara->firstname;       # => らぁら
+    print $laara->lastname;        # => 真中
+    print $laara->age;             # => 10
+    print $laara->birthday;        # => 11/20
+    print $laara->cv;              # => 茜屋日海夏
+    print $laara->say;             # => かしこま！
+
+    $laara->pripara_change;        # => $laala get into PriPara world
+    print $laara->costume_brand;   # => Twinkle Ribbon
 
 =head1 DESCRIPTION
 
