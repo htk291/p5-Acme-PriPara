@@ -11,7 +11,6 @@ use Test::More;
 use utf8;
 
 subtest 'Charactors' => sub {
-
     subtest 'Laara' => sub {
         my $laara = Acme::PriPara::MainMembers::ManakaLaara->new;
         is $laara->name,          '真中 らぁら';
@@ -27,7 +26,7 @@ subtest 'Charactors' => sub {
         is $laara->costume_brand,  undef;    # withiout PriPara Changing, you cannot get costume_brand.
 
         $laara->pripara_change;
-        is $laara->costume_brand, 'Twinkle Ribbon';  
+        is $laara->costume_brand, 'Twinkle Ribbon';
     };
 
     subtest 'Mirei' => sub {
