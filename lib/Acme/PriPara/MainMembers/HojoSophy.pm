@@ -22,3 +22,4 @@ age: 14
 birthday: 7/30
 cv: 久保田未夢
 costume_brand: Holic Trick
+color: パープル

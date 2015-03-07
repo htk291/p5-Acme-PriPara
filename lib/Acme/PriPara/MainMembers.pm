@@ -53,6 +53,11 @@ sub say {
     return $self->{say}; 
 }
 
+sub color {
+    my ($self) = @_;
+    return $self->{color};
+}
+
 sub costume_brand {
     my ($self) = @_; 
     return $self->has_pripara_changed ? $self->{costume_brand} : undef;

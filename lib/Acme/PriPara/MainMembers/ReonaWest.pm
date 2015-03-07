@@ -27,3 +27,4 @@ age: 13
 birthday: 2/5
 cv: 若井友希
 costume_brand: Fortune Party
+color: レッド

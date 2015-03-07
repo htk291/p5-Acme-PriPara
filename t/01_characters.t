@@ -21,6 +21,7 @@ subtest 'Charactors' => sub {
         is $laala->cv,            '茜屋日海夏';
         is $laala->voiced_by,     '茜屋日海夏';
         is $laala->say,           'かしこま！';
+        is $laala->color,         'ピンク';
         is $laala->costume_brand,  undef;    # withiout PriPara Changing, you cannot get costume_brand.
 
         $laala->pripara_change;
@@ -37,6 +38,7 @@ subtest 'Charactors' => sub {
         is $mirei->cv,            '芹澤優';
         is $mirei->voiced_by,     '芹澤優';
         is $mirei->costume_brand,  undef;
+        is $mirei->color,         'ライトブルー';
 
         $mirei->pripara_change;
         is $mirei->costume_brand, 'Candy à la Mode';
@@ -52,6 +54,7 @@ subtest 'Charactors' => sub {
         is $sophy->cv,            '久保田未夢';
         is $sophy->voiced_by,     '久保田未夢';
         is $sophy->costume_brand,  undef;
+        is $sophy->color,         'パープル';
 
         $sophy->pripara_change;    # Sophie attempt to enter the PriPara World...
         is $sophy->costume_brand,  undef;
@@ -70,6 +73,7 @@ subtest 'Charactors' => sub {
         is $sion->cv,            '山北早紀';
         is $sion->voiced_by,     '山北早紀';
         is $sion->costume_brand,  undef;
+        is $sion->color,         'グリーン';
 
         $sion->pripara_change;
         is $sion->costume_brand, 'Baby Monster';
@@ -83,6 +87,7 @@ subtest 'Charactors' => sub {
         is $dorothy->birthday,    '2/5';
         is $dorothy->cv,          '澁谷梓希';
         is $dorothy->voiced_by,   '澁谷梓希';
+        is $dorothy->color,         'ブルー';
 
         $dorothy->pripara_change;
         is $dorothy->costume_brand, undef;
@@ -100,6 +105,7 @@ subtest 'Charactors' => sub {
         is $reona->birthday,      '2/5';
         is $reona->cv,            '若井友希';
         is $reona->voiced_by,     '若井友希';
+        is $reona->color,         'レッド';
 
         $reona->pripara_change;
         is $reona->costume_brand, undef;

@@ -16,3 +16,4 @@ age: 13
 birthday: 10/1
 cv: 芹澤優
 costume_brand: Candy à la Mode
+color: ライトブルー

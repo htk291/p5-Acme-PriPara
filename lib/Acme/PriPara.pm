@@ -70,6 +70,7 @@ Acme::PriPara - It's new $module
     print $laala->birthday;        # => 11/20
     print $laala->cv;              # => 茜屋日海夏
     print $laala->say;             # => かしこま！
+    print $laala->color;           # => ピンク
 
     $laala->pripara_change;        # => $laala get into PriPara world
     print $laala->costume_brand;   # => Twinkle Ribbon
