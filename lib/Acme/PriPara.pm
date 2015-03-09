@@ -68,6 +68,7 @@ Acme::PriPara - It's new $module
     print $laara->lastname;        # => 真中
     print $laara->age;             # => 10
     print $laara->birthday;        # => 11/20
+    print $laara->blood_type;      # => O
     print $laara->cv;              # => 茜屋日海夏
     print $laara->say;             # => かしこま！
 

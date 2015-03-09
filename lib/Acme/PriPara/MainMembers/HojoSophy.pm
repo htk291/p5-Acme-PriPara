@@ -20,5 +20,6 @@ firstname: そふぃ
 lastname: 北条
 age: 14
 birthday: 7/30
+blood_type: AB
 cv: 久保田未夢
 costume_brand: Holic Trick
