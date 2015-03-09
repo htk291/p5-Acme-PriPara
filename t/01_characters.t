@@ -11,7 +11,8 @@ use Test::More;
 use utf8;
 
 subtest 'Charactors' => sub {
-    subtest 'Lala' => sub {
+
+    subtest 'Laara' => sub {
         my $laara = Acme::PriPara::MainMembers::ManakaLaara->new;
         is $laara->name,          '真中 らぁら';
         is $laara->firstname,     'らぁら';
@@ -44,7 +45,7 @@ subtest 'Charactors' => sub {
         is $mirei->costume_brand, 'Candy à la Mode';
     };
 
-    subtest 'Sophie' => sub {
+    subtest 'Sophy' => sub {
         my $sophy = Acme::PriPara::MainMembers::HojoSophy->new;
         is $sophy->name,          '北条 そふぃ';
         is $sophy->firstname,     'そふぃ';
@@ -56,14 +57,14 @@ subtest 'Charactors' => sub {
         is $sophy->costume_brand,  undef;
         is $sophy->color,         'パープル';
 
-        $sophy->pripara_change;    # Sophie attempt to enter the PriPara World...
+        $sophy->pripara_change;    # Sophy attempt to enter the PriPara World...
         is $sophy->costume_brand,  undef;
 
-        $sophy->pripara_change('Red Flash'); # Sophie can get to the PriPara World after eating Red Flash
+        $sophy->pripara_change('Red Flash'); # Sophy can get to the PriPara World after eating Red Flash
         is $sophy->costume_brand, 'Holic Trick';
     };
 
-    subtest 'Shion' => sub {
+    subtest 'Sion' => sub {
         my $sion = Acme::PriPara::MainMembers::TodoSion->new;
         is $sion->name,          '東堂 シオン';
         is $sion->firstname,     'シオン';
@@ -78,6 +79,7 @@ subtest 'Charactors' => sub {
         $sion->pripara_change;
         is $sion->costume_brand, 'Baby Monster';
     };
+
     subtest 'Dorothy' => sub {
         my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
         is $dorothy->name,        'ドロシー・ウェスト';
@@ -93,10 +95,11 @@ subtest 'Charactors' => sub {
         is $dorothy->costume_brand, undef;
 
         my $reona = Acme::PriPara::MainMembers::ReonaWest->new;
-        $dorothy->pripara_change($reona);  # Dorothy is always being with Leona ...
+        $dorothy->pripara_change($reona);  # Dorothy is always being with Reona ...
         is $dorothy->costume_brand, 'Fortune Party';
     };
-    subtest 'Leona' => sub {
+
+    subtest 'Reona' => sub {
         my $reona = Acme::PriPara::MainMembers::ReonaWest->new;
         is $reona->name,          'レオナ・ウェスト';
         is $reona->firstname,     'レオナ';
@@ -111,7 +114,7 @@ subtest 'Charactors' => sub {
         is $reona->costume_brand, undef;
 
         my $dorothy = Acme::PriPara::MainMembers::DorothyWest->new;
-        $reona->pripara_change($dorothy);  # Leona is always being with Dorothy ...
+        $reona->pripara_change($dorothy);  # Reona is always being with Dorothy ...
         is $reona->costume_brand, 'Fortune Party';
     };
 };
