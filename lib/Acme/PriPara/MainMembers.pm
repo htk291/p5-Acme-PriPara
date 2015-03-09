@@ -40,6 +40,11 @@ sub birthday {
     return $self->{birthday}; 
 }
 
+sub blood_type {
+    my ($self) = @_; 
+    return $self->{blood_type}; 
+}
+
 sub cv {
     my ($self) = @_; 
     return $self->{cv}; 

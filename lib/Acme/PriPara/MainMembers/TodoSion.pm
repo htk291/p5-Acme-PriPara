@@ -14,6 +14,7 @@ firstname: シオン
 lastname: 東堂
 age: 13
 birthday: 1/5
+blood_type: B
 cv: 山北早紀
 costume_brand: Baby Monster
 color: グリーン

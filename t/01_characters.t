@@ -19,6 +19,7 @@ subtest 'Charactors' => sub {
         is $laara->lastname,      '真中';
         is $laara->age,            10;
         is $laara->birthday,      '11/20';
+        is $laara->blood_type,    'O';
         is $laara->cv,            '茜屋日海夏';
         is $laara->voiced_by,     '茜屋日海夏';
         is $laara->say,           'かしこま！';
@@ -36,6 +37,7 @@ subtest 'Charactors' => sub {
         is $mirei->lastname,      '南';
         is $mirei->age,            13;
         is $mirei->birthday,      '10/1';
+        is $mirei->blood_type,    'A';
         is $mirei->cv,            '芹澤優';
         is $mirei->voiced_by,     '芹澤優';
         is $mirei->costume_brand,  undef;
@@ -52,6 +54,7 @@ subtest 'Charactors' => sub {
         is $sophy->lastname,      '北条';
         is $sophy->age,            14;
         is $sophy->birthday,      '7/30';
+        is $sophy->blood_type,    'AB';
         is $sophy->cv,            '久保田未夢';
         is $sophy->voiced_by,     '久保田未夢';
         is $sophy->costume_brand,  undef;
@@ -71,6 +74,7 @@ subtest 'Charactors' => sub {
         is $sion->lastname,      '東堂';
         is $sion->age,            13;
         is $sion->birthday,      '1/5';
+        is $sion->blood_type,    'B';
         is $sion->cv,            '山北早紀';
         is $sion->voiced_by,     '山北早紀';
         is $sion->costume_brand,  undef;
@@ -87,6 +91,7 @@ subtest 'Charactors' => sub {
         is $dorothy->lastname,    'ウェスト';
         is $dorothy->age,          13;
         is $dorothy->birthday,    '2/5';
+        is $dorothy->blood_type,  'A';
         is $dorothy->cv,          '澁谷梓希';
         is $dorothy->voiced_by,   '澁谷梓希';
         is $dorothy->color,         'ブルー';
@@ -106,6 +111,7 @@ subtest 'Charactors' => sub {
         is $reona->lastname,      'ウェスト';
         is $reona->age,            13;
         is $reona->birthday,      '2/5';
+        is $reona->blood_type,    'A';
         is $reona->cv,            '若井友希';
         is $reona->voiced_by,     '若井友希';
         is $reona->color,         'レッド';

@@ -25,6 +25,7 @@ firstname: レオナ
 lastname: ウェスト
 age: 13
 birthday: 2/5
+blood_type: A
 cv: 若井友希
 costume_brand: Fortune Party
 color: レッド
