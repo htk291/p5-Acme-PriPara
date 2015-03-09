@@ -8,12 +8,12 @@ our $VERSION = "0.01";
 
 use Readonly;
 
-Readonly our $Laala_and_Mirei => [
-    'ManakaLaala',
+Readonly our $Laara_and_Mirei => [
+    'ManakaLaara',
     'MinamiMirei',
 ];
 Readonly our $SoLaMi_Smile => [
-    @$Laala_and_Mirei,
+    @$Laara_and_Mirei,
     'HojoSophy',
 ];
 
@@ -61,19 +61,19 @@ Acme::PriPara - It's new $module
 
     use Acme::PriPara;
 
-    my ($laala, $mirei, $sophy, $sion, $dorothy, $reona) = Acme::PriPara->main_members;
+    my ($laara, $mirei, $sophy, $sion, $dorothy, $reona) = Acme::PriPara->main_members;
 
-    print $laala->name;            # => 真中 らぁら
-    print $laala->firstname;       # => らぁら
-    print $laala->lastname;        # => 真中
-    print $laala->age;             # => 10
-    print $laala->birthday;        # => 11/20
-    print $laala->cv;              # => 茜屋日海夏
-    print $laala->say;             # => かしこま！
-    print $laala->color;           # => ピンク
+    print $laara->name;            # => 真中 らぁら
+    print $laara->firstname;       # => らぁら
+    print $laara->lastname;        # => 真中
+    print $laara->age;             # => 10
+    print $laara->birthday;        # => 11/20
+    print $laara->cv;              # => 茜屋日海夏
+    print $laara->say;             # => かしこま！
+    print $laara->color;           # => ピンク
 
-    $laala->pripara_change;        # => $laala get into PriPara world
-    print $laala->costume_brand;   # => Twinkle Ribbon
+    $laara->pripara_change;        # => $laara get into PriPara world
+    print $laara->costume_brand;   # => Twinkle Ribbon
 
 =head1 DESCRIPTION
 
