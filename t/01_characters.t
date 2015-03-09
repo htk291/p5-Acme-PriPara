@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 use Acme::PriPara;
-use Acme::PriPara::MainMembers::ManakaLaala;
+use Acme::PriPara::MainMembers::ManakaLaara;
 use Acme::PriPara::MainMembers::MinamiMirei;
 use Acme::PriPara::MainMembers::HojoSophy;
 use Acme::PriPara::MainMembers::TodoSion;
@@ -12,19 +12,19 @@ use utf8;
 
 subtest 'Charactors' => sub {
     subtest 'Lala' => sub {
-        my $laala = Acme::PriPara::MainMembers::ManakaLaala->new;
-        is $laala->name,          '真中 らぁら';
-        is $laala->firstname,     'らぁら';
-        is $laala->lastname,      '真中';
-        is $laala->age,            10;
-        is $laala->birthday,      '11/20';
-        is $laala->cv,            '茜屋日海夏';
-        is $laala->voiced_by,     '茜屋日海夏';
-        is $laala->say,           'かしこま！';
-        is $laala->costume_brand,  undef;    # withiout PriPara Changing, you cannot get costume_brand.
+        my $laara = Acme::PriPara::MainMembers::ManakaLaara->new;
+        is $laara->name,          '真中 らぁら';
+        is $laara->firstname,     'らぁら';
+        is $laara->lastname,      '真中';
+        is $laara->age,            10;
+        is $laara->birthday,      '11/20';
+        is $laara->cv,            '茜屋日海夏';
+        is $laara->voiced_by,     '茜屋日海夏';
+        is $laara->say,           'かしこま！';
+        is $laara->costume_brand,  undef;    # withiout PriPara Changing, you cannot get costume_brand.
 
-        $laala->pripara_change;
-        is $laala->costume_brand, 'Twinkle Ribbon';  
+        $laara->pripara_change;
+        is $laara->costume_brand, 'Twinkle Ribbon';  
     };
 
     subtest 'Mirei' => sub {
