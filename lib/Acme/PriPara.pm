@@ -71,10 +71,10 @@ Acme::PriPara - It's new $module
     print $laara->blood_type;      # => O
     print $laara->cv;              # => 茜屋日海夏
     print $laara->say;             # => かしこま！
-    print $laara->color;           # => ピンク
 
     $laara->pripara_change;        # => $laara get into PriPara world
     print $laara->costume_brand;   # => Twinkle Ribbon
+    print $laara->color;           # => ピンク
 
 =head1 DESCRIPTION
 
