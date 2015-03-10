@@ -27,6 +27,7 @@ subtest 'Charactors' => sub {
         is $laara->color,          undef, 'color returns only if pripara-changed';
 
         $laara->pripara_change;
+        ok $laara->has_pripara_changed;
         is $laara->costume_brand, 'Twinkle Ribbon';
         is $laara->color,         'ピンク', 'color returns only if pripara-changed';
     };
