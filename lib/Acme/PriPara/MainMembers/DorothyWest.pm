@@ -27,3 +27,4 @@ birthday: 2/5
 blood_type: A
 cv: 澁谷梓希
 costume_brand: Fortune Party
+color: ブルー

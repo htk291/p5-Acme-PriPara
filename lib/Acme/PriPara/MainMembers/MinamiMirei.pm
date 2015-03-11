@@ -17,3 +17,4 @@ birthday: 10/1
 blood_type: A
 cv: 芹澤優
 costume_brand: Candy à la Mode
+color: ライトブルー

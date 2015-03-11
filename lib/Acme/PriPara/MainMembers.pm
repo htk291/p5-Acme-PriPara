@@ -58,14 +58,19 @@ sub say {
     return $self->{say}; 
 }
 
+sub color {
+    my ($self) = @_;
+    return $self->has_pripara_changed ? $self->{color} : undef;
+}
+
 sub costume_brand {
     my ($self) = @_; 
     return $self->has_pripara_changed ? $self->{costume_brand} : undef;
 }
 
 sub pripara_change {
-    my ($self) = @_; 
-    $self->{has_pripara_changed} = 1; 
+    my ($self) = @_;
+    $self->has_pripara_changed(1);
 }
 
 sub BUILD {

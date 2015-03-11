@@ -18,3 +18,4 @@ blood_type: O
 cv: 茜屋日海夏
 say: かしこま！
 costume_brand: Twinkle Ribbon
+color: ピンク

@@ -23,3 +23,4 @@ birthday: 7/30
 blood_type: AB
 cv: 久保田未夢
 costume_brand: Holic Trick
+color: パープル

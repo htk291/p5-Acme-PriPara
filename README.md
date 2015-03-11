@@ -20,6 +20,7 @@ Acme::PriPara - It's new $module
 
     $laara->pripara_change;        # => $laara get into PriPara world
     print $laara->costume_brand;   # => Twinkle Ribbon
+    print $laara->color;           # => ピンク
 
 # DESCRIPTION
 
