@@ -4,13 +4,13 @@
       "This library is free software; you can redistribute it and/or modify"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.1.1, CPAN::Meta::Converter version 2.140640",
+   "generated_by" : "Minilla/v3.1.4, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "Acme-PriPara",
    "no_index" : {
@@ -58,20 +58,21 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/htk291/p5-Acme-PriPara/issues"
+         "web" : "https://github.com/Kiryuanzu/p5-Acme-PriPara/issues"
       },
-      "homepage" : "https://github.com/htk291/p5-Acme-PriPara",
+      "homepage" : "https://github.com/Kiryuanzu/p5-Acme-PriPara",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/htk291/p5-Acme-PriPara.git",
-         "web" : "https://github.com/htk291/p5-Acme-PriPara"
+         "url" : "git://github.com/Kiryuanzu/p5-Acme-PriPara.git",
+         "web" : "https://github.com/Kiryuanzu/p5-Acme-PriPara"
       }
    },
    "version" : "0.02",
    "x_contributors" : [
-      "htk291 <htk0129@gmail.com>",
       "OGATA Tetsuji <tetsuji.ogata@gmail.com>",
       "SUZUKI Masashi <m15.suzuki.masashi@gmail.com>",
-      "H.Takahashi <htk291@gmail.com>"
-   ]
+      "htk291 <htk0129@gmail.com>",
+      "htk291 <htk291@gmail.com>"
+   ],
+   "x_static_install" : 1
 }
