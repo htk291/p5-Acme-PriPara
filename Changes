@@ -2,6 +2,9 @@ Revision history for Perl extension Acme-PriPara
 
 {{$NEXT}}
 
+0.03 2019-09-09T09:53:51Z
+    - add charcter-says (patched by @anzu_mmm++)
+
 0.02 2015-07-04T09:29:00Z
     - release version
     
