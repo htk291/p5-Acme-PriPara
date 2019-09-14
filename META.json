@@ -67,7 +67,8 @@
          "web" : "https://github.com/htk291/p5-Acme-PriPara"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
+   "x_authority" : "cpan:HTK",
    "x_contributors" : [
       "AnaTofuZ <anatofuz@gmail.com>",
       "OGATA Tetsuji <tetsuji.ogata@gmail.com>",
